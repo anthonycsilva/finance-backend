@@ -15,8 +15,9 @@ public class UsuarioController : ControllerBase
     }
 
     [HttpGet]
-    public IEnumerable<UsuarioResponse> ObterTodoUsuarios()
+    public async Task<IEnumerable<UsuarioResponse>> ObterTodoUsuarios()
     {
-        return new List<UsuarioResponse>();
+        var result = await _usuarioService.ObterTodosOsUsuarios();
+        return result;
     }
 }
