@@ -2,7 +2,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FinanceApi.Business\FinanceApi.Business.csproj" />
-    <ProjectReference Include="..\FinanceApi.Api\FinanceApi.Api.csproj" />
   </ItemGroup>
 
   <ItemGroup>
